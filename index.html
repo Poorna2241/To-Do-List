@@ -5,10 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js "></script>
+    <script src="script.js"></script>
 </head>
 <body>
-    
+    <div class="background-image">
+        <img src="images/bg-desktop-dark.jpg" >
+    </div>
+
+    <div class="container">
+        <div class="head">
+            <div class="title">TO DO LIST</div>   
+            <div class="theme"><img src="images/icon-sun.svg" ></div>
+        </div>
+
+        <div class="new-todo">
+            <div class="check">
+                <div class="check-mark"></div>
+            </div>
+            <div class="new-todo-input">
+                <form  onsubmit="addItem(event)">
+                    <input type="text" id="todo-input" placeholder="Write your todo here">
+                </form>
+            </div>
+        </div>
+    </div>
+
     
 </body>
 </html> 
