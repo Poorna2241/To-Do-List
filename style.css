@@ -54,12 +54,23 @@ body{
     justify-content: center;
     align-items: center;
 }
-.check-mark{
-    background-color: rgb(86, 73, 184);
+
+.check-mark {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    
+    border: 2px solid hsl(237, 14%, 26%);
+    transition: all 0.25s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.check-mark img {
+    visibility: hidden;
+}
+
+.check-mark.checked img, .check-mark:hover img {
+    visibility: visible;
 }
 .check-mark:hover{
    background: linear-gradient(135deg, #55DDFF 0%, #C058F3 100%);
@@ -77,4 +88,44 @@ body{
     outline: none;
     color: hsl(0, 0%, 89%);
 }
+.new-todo-input form {
+    flex-grow: 1;
+    display: flex;
+}
+/* .check-mark-checked img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
+.todo-item {
+    width: 100%;
+    height: 70px;
+    background-color: hsl(235, 24%, 19%);
+    display: flex;
+    border-bottom: 1px solid hsl(237, 14%, 26%);
+    cursor: pointer;
+    transition: all .25s ease;
+    transition-property: box-shadow, transform, border-color;
+}
+
+.todo-items-wrapper {
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: hsl(235, 24%, 19%);
+    box-shadow: 0px 2px 30px 0px rgba(0,0,0,0.4);
+    margin-bottom: 30px;
+}
+.todo-items-info {
+    width: 100%;
+    height: 70px;
+    background-color: hsl(235, 24%, 19%);
+    display: flex;
+    align-items: center;
+    color: hsl(233, 14%, 35%);
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
