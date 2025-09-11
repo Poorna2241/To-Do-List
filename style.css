@@ -132,3 +132,15 @@ body{
     display: flex;
     justify-content: center;
 }
+
+.items-statuses span  {
+    padding: 0 4px;
+    cursor: pointer;
+}
+
+.items-clear {
+    cursor: pointer;
+    text-align: end;
+}
+
+
